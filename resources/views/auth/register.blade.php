@@ -20,7 +20,7 @@
                         @csrf
 
                         <div class="form-group">
-                            <label for="name" class=" col-form-label text-md-end">{{ __('Name') }}</label>
+                            <label for="name" class=" col-form-label text-md-end">{{ __('admin.Name') }}</label>
 
                             <div class="">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>

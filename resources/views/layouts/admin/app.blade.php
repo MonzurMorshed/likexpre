@@ -35,6 +35,7 @@
 
 </head>
 <body>
+   
     <div id="app" class="bg-primary">
 
         <div class="lang">
@@ -44,9 +45,9 @@
         @php 
             $locale = App::getLocale(); 
             $arr = Config::get('languages');
-           
+            //dd(session()->all());
             $getLocale = App::getLocale();
-            echo 'Languages : '.$locale;
+            echo 'Languages : '.Session::get('lang');
             
         @endphp
     </a>
@@ -57,7 +58,7 @@
         
         
                 <a class="dropdown-item" href="{{ route('set.locale', $lang) }}"> 
-                    {{$language['display']}}
+                    {{$language['display']}} - ({{$lang}})
                 </a>
         
     @endforeach

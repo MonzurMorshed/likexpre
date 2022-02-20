@@ -2,7 +2,7 @@
 
 	return
 	[
-		'Name' => 'test',
+		'Name' => 'Name',
 		'page_title'=>'Admin Login',
 		'login_header'=>'Likespre Login',
 		'login_header_title'=>'Sign in to access in you shop.',
